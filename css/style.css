@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap');
+
+.encabezado{
+    background-color: #92d1f2;
+    /* se saco de https://paletadecolores.com.ar/paleta/92d1f2/acddf5/c6e8f9/e0f4fc/faffff/*/
+}
+
+.pie-pagina{
+    background-color: #92d1f2;
+    /* se saco de https://paletadecolores.com.ar/paleta/92d1f2/acddf5/c6e8f9/e0f4fc/faffff/*/
+}
+.contenido-principal{
+    background-color: #c6e8f9;
+    /* se saco de https://paletadecolores.com.ar/paleta/92d1f2/acddf5/c6e8f9/e0f4fc/faffff/*/
+}
+
+/* Reacondicionamos el menu de navegacion*/
+.menu-items{
+    /*Aca modifico lo correspondiente a las listas*/
+    list-style: none;
+}
+
+.menu-item{
+    /*Aca modifico lo correspondiente a cada item en particular*/
+    font-family: 'Oswald';
+    font-size: 30px;
+    text-decoration: none; /*Le saco el subrayado al link*/
+    color: black;
+}
+
+.titulo-principal{
+    font-family: 'Oswald';
+    font-size: 80px;
+    color: black;
+}
+
+/*Modifico el texto del parrafo principal*/
+.texto-principal{
+    font-family: 'Oswald';
+    font-size: 20px;
+    color: black;
+}
+
+/*Acomodo el ancho de cada imagen al 30% para que entren las 3 en una linea.*/
+.main-imagen{
+    width: 30%;
+}
+
+/*Modifico el texto del formulario*/
+.texto-principal{
+    font-family: 'Oswald';
+    font-size: 20px;
+    color: black;
+}
+
+/*Modifico los parametros de las imagenes del plantel*/
+.imagen-jugadores{
+    width: 300px;
+    text-align: center;
+}
+
+/*Modifico los parametros del video de los goles*/
+.video-goles{
+    width: 800px;
+    height: 600px;
+}
