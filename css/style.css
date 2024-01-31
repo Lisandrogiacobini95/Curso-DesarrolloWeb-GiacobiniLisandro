@@ -5,7 +5,7 @@
 
 * {
     margin: 0px;
-    padding: 0;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -27,31 +27,60 @@ a {
 
 
 /* MODIFICAMOS EL HEADER */
-.logo-edit{
-    width: 13rem; 
+.logo-edit {
+    width: 13rem;
 }
 
-.bg-header{
+.bg-header {
     background-color: #92d1f2;
 }
 
-.navbar-edit{
-    gap:4rem;
-    width:50%;
-    justify-content:space-evenly;
+.navbar-edit {
+    gap: 4rem;
+    justify-content: space-evenly;
     align-items: baseline;
 }
 
-.nav-link{
-    font-family: 'Ubuntu', 'sans-serif';
-    font-size: 3rem;
-    color:black;
+.text-center-edit {
+    align-items: center;
+    text-align: center;
 }
 
-.nav-link-edit:hover{
+.nav-link {
+    font-family: 'Ubuntu', 'sans-serif';
+    font-size: 3rem;
+    color: black;
+}
+
+.nav-link-edit:hover {
     text-decoration: underline;
     color: rgb(70, 68, 68);
 }
 
+.navbar-toggler-icon {
+    width: 3em;
+    height: 3em;
+}
+
+.navbar-toggler {
+    margin-right: 4.5rem;
+}
+
+.align-items-edit{
+    align-items: end;
+}
+
+
 /* MODIFICAMOS EL MAIN */
 
+@media only screen and (max-width: 275px) {
+
+    .container-edit{
+        flex-direction: column;
+    }
+
+    .navbar-toggler {
+        margin: 2rem 0;
+    }
+
+}
