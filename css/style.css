@@ -25,6 +25,10 @@ a {
     color: #000;
 }
 
+img{
+    width: 700px;
+}
+
 
 /* MODIFICAMOS EL HEADER */
 .logo-edit {
@@ -72,6 +76,18 @@ a {
 
 
 /* MODIFICAMOS EL MAIN */
+.titulo-principal{
+    font-family: 'ubuntu';
+    font-size: 5rem;
+    text-align: center;
+
+}
+
+.bg-main{
+    background-color: #c6e8f9;;
+    border-radius: 2rem;
+}
+
 
 @media only screen and (max-width: 275px) {
 
