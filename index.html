@@ -65,14 +65,15 @@
         <!--FIN HEADER-->
 
         <!--INICIO MAIN-->
-        <main class="contenido-principal mt-4">
+        <!-- Le coloco el mismo background color que el header -->
+        <main class="contenido-principal bg-header">
             <!-- Aca va a ir el contenido principal-->
-            <section class="container bg-main">
+            <section class="container bg-main p-4">
                 <div>
                     <!-- Titulo de la pagina-->
-                    <h1 class="titulo-principal">EL CAMINO A LA TERCERA</h1>
+                    <h1 class="titulo-principal ">EL CAMINO A LA TERCERA</h1>
                 </div>
-                <div class="container">
+                <div class="container carrousel-edit">
                     <!-- CARROUSEL DE IMAGENES -->
                     <div id="carouselExampleInterval" class="carousel slide"
                         data-bs-ride="carousel">
@@ -80,15 +81,18 @@
                             <div class="carousel-item active"
                                 data-bs-interval="10000">
                                 <img src="./assets/argentina_campeon_1.jpg"
-                                    class="d-block w-100 img-thumbnail" alt="...">
+                                    class="d-block w-100 img-thumbnail"
+                                    alt="...">
                             </div>
                             <div class="carousel-item" data-bs-interval="10000">
                                 <img src="./assets/argentina_campeon_2.jpg"
-                                    class="d-block w-100 img-thumbnail" alt="...">
+                                    class="d-block w-100 img-thumbnail"
+                                    alt="...">
                             </div>
                             <div class="carousel-item" data-bs-interval="10000">
                                 <img src="./assets/argentina_campeon_3.jpg"
-                                    class="d-block w-100 img-thumbnail" alt="...">
+                                    class="d-block w-100 img-thumbnail"
+                                    alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button"
@@ -97,7 +101,7 @@
                             <span class="carousel-control-prev-icon"
                                 aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
-                        </button>q
+                        </button>
                         <button class="carousel-control-next" type="button"
                             data-bs-target="#carouselExampleInterval"
                             data-bs-slide="next">
@@ -108,7 +112,32 @@
                     </div>
                 </div>
                 <div>
-                    <p class="texto-principal">Lorem ipsum dolor sit amet
+                    <p class="texto-principal p-4 lg-sm">Lorem, ipsum dolor sit
+                        amet consectetur adipisicing elit. Beatae, cum.
+                        Lorem ipsum dolor sit Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Animi ex corrupti
+                        laudantium, repellendus quam dolorem? Aperiam totam
+                        consectetur vero error natus, alias, exercitationem hic
+                        modi doloremque quam officiis laborum provident
+                        dignissimos. Harum atque sint sapiente nam? Deserunt
+                        odio explicabo minima odit sequi dolore consequatur
+                        doloremque voluptates dolorum delectus, tempora officia
+                        repudiandae. Nulla dolor ea vitae eaque voluptatem,
+                        perferendis sequi inventore fugit autem nam quidem,
+                        doloremque natus facere. Accusamus provident
+                        voluptatibus ad aperiam laudantium impedit quis nesciunt
+                        rem corporis veritatis, tenetur molestiae, repudiandae
+                        voluptate nulla cumque, sunt laborum aliquid. Nostrum
+                        consectetur quasi dicta molestiae at officiis cumque
+                        aperiam dignissimos repellendus voluptatibus, laborum
+                        esse. Magnam sint animi nisi impedit unde, est aliquam
+                        optio corporis eveniet, neque ut porro sit iusto velit
+                        consectetur, reprehenderit earum veniam voluptatem ipsa
+                        alias! Doloribus doloremque non suscipit repudiandae
+                        cumque sapiente natus neque quibusdam soluta, nostrum
+                        rem sequi quaerat quos distinctio unde fugiat officia
+                        laudantium hic, tenetur modi.
+                        amet
                         consectetur adipisicing elit. Ratione, ad minima
                         eveniet, nihil quasi debitis eaque mollitia et eum
                         praesentium reprehenderit voluptas, numquam id
@@ -131,9 +160,11 @@
         <!--FIN DEL MAIN-->
 
         <!--INICIO ASIDE-->
-        <aside class="contenido-aside">
+        <!-- Le coloco el mismo background color que el header -->
+        <aside class="bg-header aside-edit">
             <!-- Donde se suele agregar contenido no tan relevante a la web. Banners, publicidad, etc-->
-            <div>
+            <!-- Reseteo el padding original, y le agrego un padding top y bottom de 5 = 3rem -->
+            <div class="container p-0 pt-5 pb-5">
                 <!--Le incorporo una lista de spotify-->
                 <iframe style="border-radius:12px"
                     src="https://open.spotify.com/embed/playlist/7MREPP7BD7ClNLJ6FTU7Nx?utm_source=generator"
@@ -143,29 +174,55 @@
                     loading="lazy"></iframe>
             </div>
         </aside>
+        <!--FIN ASIDE-->
 
         <!--INICIO FOOTER-->
-        <footer class="container">
-            <div>
-                <!--Redes Sociales-->
-                <ul class="menu-items">
-                    <li><a class="menu-item" href>Facebook</a></li>
-                    <li><a class="menu-item" href>Instagram</a></li>
-                    <li><a class="menu-item" href>X</a></li>
-                </ul>
-            </div>
-            <div>
-                <!--Copyright-->
-                <h2>Copyright © 2023 Giacobini Lisandro. Todos los derechos
-                    reservados.</h2>
-            </div>
-            <div>
-                <!--Logo en el pie de pagina-->
-                <img class="logo-edit" src="./assets/logo.png" alt>
-            </div>
-        </footer>
+        <footer class="bg-header">
+            <section class="container pb-5">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-5 redes-edit">
+                        <!--Redes Sociales-->
+                        <ul class="menu-items">
+                            <li>
+                                <a class="menu-footer-item facebook" href="https://www.facebook.com/AFASeleccionArgentina" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-footer-item instagram" href="https://www.instagram.com/afaseleccion/?hl=es" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="menu-footer-item twitter" href="https://twitter.com/afa" target="_blank">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 copyright-edit">
+                        <!--Copyright-->
+                        <h2 class="texto-copyright">Copyright © 2023 Giacobini
+                            Lisandro. Todos los
+                            derechos
+                            reservados.</h2>
+                    </div>
+                    <div class="col-sm-4 col-xs-5 logo-footer-edit">
+                        <!--Logo en el pie de pagina-->
+                        <img class="logo-edit" src="./assets/logo.png" alt>
+                    </div>
+                </div>
 
-        <!-- AGREGO EL SCRIP DE BOOTSTRAP -->
+            </section>
+
+        </footer>
+        <!--FIN FOOTER-->
+
+        <!-- AGREGO EL SCRIPT DE LOS ICONOS DE REDES SOCIALES -->
+        <script src="https://kit.fontawesome.com/a285fb0e4a.js" crossorigin="anonymous"></script>
+
+        <!-- AGREGO EL SCRIPT DE BOOTSTRAP -->
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

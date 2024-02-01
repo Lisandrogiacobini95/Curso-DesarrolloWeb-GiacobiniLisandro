@@ -2,12 +2,11 @@
 
 
 /* reset global sacamos el margin y padding que trae por defecto el navegador */
-
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-}
+} 
 
 /* reset de tamaño de fuente para que 1rem y 1em sean igual a 10px */
 html {
@@ -36,7 +35,8 @@ img{
 }
 
 .bg-header {
-    background-color: #92d1f2;
+    /* background-color: #92d1f2; */
+    background-color: #001a41;
 }
 
 .navbar-edit {
@@ -53,21 +53,25 @@ img{
 .nav-link {
     font-family: 'Ubuntu', 'sans-serif';
     font-size: 3rem;
-    color: black;
+    /* color: black; */
+    color: aliceblue;
 }
 
 .nav-link-edit:hover {
     text-decoration: underline;
-    color: rgb(70, 68, 68);
+    /* color: rgb(70, 68, 68); */
+    color: #00b4fb;
 }
 
 .navbar-toggler-icon {
     width: 3em;
     height: 3em;
+    background-color: aliceblue;
 }
 
 .navbar-toggler {
     margin-right: 4.5rem;
+    background-color: aliceblue;
 }
 
 .align-items-edit{
@@ -76,27 +80,137 @@ img{
 
 
 /* MODIFICAMOS EL MAIN */
+.bg-main{
+    /* background-color: #c6e8f9; */
+    background-color: #00b4fb;
+    border-radius: 1rem;
+}
+
 .titulo-principal{
     font-family: 'ubuntu';
     font-size: 5rem;
     text-align: center;
+    padding: 1rem 1rem;
+    color: #001a41;
 
 }
 
-.bg-main{
-    background-color: #c6e8f9;;
-    border-radius: 2rem;
+.texto-principal{
+    font-family: 'Oswald';
+    font-size: 2rem;
+    text-align: justify;
+    color: #001a41;
+}
+
+/* MODIFICAMOS EL FOOTER */
+.texto-copyright{
+    font-family: 'Ubuntu';
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-align: center;
+}
+
+.copyright-edit{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: end;
+}
+
+.logo-footer-edit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.redes-edit{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.menu-footer-item{
+    font-family: 'Ubuntu';
+    font-size: 3rem;
+    color: aliceblue;
 }
 
 
-@media only screen and (max-width: 275px) {
 
-    .container-edit{
-        flex-direction: column;
+@media only screen and (max-width: 575px) {
+
+    .copyright-edit{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    
+    .logo-footer-edit{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .redes-edit{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 
-    .navbar-toggler {
-        margin: 2rem 0;
+    .menu-items{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .nav-link {
+        font-size: 2rem;
+    }
+
+    .carrousel-edit{
+        display: none;
+    }
+
+    .titulo-principal{
+        font-size: 3.5rem;
+    }
+
+    @media only screen and (max-width: 275px) {
+
+        .container-edit{
+            flex-direction: column;
+        }
+    
+        .navbar-toggler {
+            margin: 2rem 0;
+        }
+    
+        .aside-edit{
+            display: block;
+        }
+    
+        .aside-edit{
+            display: none;
+        }
+    
+        .titulo-principal{
+            font-size: 2.5rem;
+        }
+
+        .menu-items{
+            padding-top: 1rem;
+        }
+
+        .nav-link {
+            font-size: 1.5rem;
+        }
+    
     }
 
 }
