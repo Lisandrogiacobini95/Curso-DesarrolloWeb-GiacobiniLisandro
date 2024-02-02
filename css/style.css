@@ -28,6 +28,9 @@ img{
     width: 700px;
 }
 
+body{
+    height: 1000px;
+}
 
 /* MODIFICAMOS EL HEADER */
 .logo-edit {
@@ -79,7 +82,7 @@ img{
 }
 
 
-/* MODIFICAMOS EL MAIN */
+/* MODIFICAMOS EL MAIN INDEX */
 .bg-main{
     /* background-color: #c6e8f9; */
     background-color: #00b4fb;
@@ -101,6 +104,46 @@ img{
     text-align: justify;
     color: #001a41;
 }
+
+/* MODIFICAMOS EL MAIN PLANTEL */
+.card-img-top{
+    margin-top: 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.arqueros{
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.defensores{
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.mediocampistas{
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.delanteros{
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
 
 /* MODIFICAMOS EL FOOTER */
 .texto-copyright{
