@@ -1,232 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- AGREGO EL CDN A BOOTSTRAP -->
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-            crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- AGREGO EL LINK A MI ARCHIVO CSS DESPUES DE BOOTSTRAP PARA PODER SOBREESCRIBIR ESTILOS. -->
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Qatar 2022 - Inicio</title>
-    </head>
-    <body>
+    <!-- AGREGO EL CDN A BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-        <!--INICIO HEADER-->
-        <header class="bg-header">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid container-edit align-items-edit">
-                    <a class="navbar-brand" href="./index.html">
-                        <img class="logo-edit" src="./assets/logo.png" alt>
-                    </a>
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div
-                        class="collapse navbar-collapse justify-content-center text-center-edit"
-                        id="navbarNav">
-                        <!-- Con la clase navbar-edit modifico el ancho,gap,etc de la barra de navegacion -->
-                        <ul class="navbar-nav navbar-edit text-center-edit">
-                            <li class="nav-item">
-                                <a class="nav-link nav-link-edit"
-                                    aria-current="page"
-                                    href="./index.html">INICIO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link-edit"
-                                    href="./pages/plantel.html">PLANTEL</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link-edit"
-                                    href="./pages/fixture.html">FIXTURE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link-edit"
-                                    href="./pages/goles.html">GOLES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link-edit"
-                                    href="./pages/contacto.html">CONTACTO</a>
-                            </li>
-                        </ul>
-                    </div>
+    <!-- AGREGO EL LINK A MI ARCHIVO CSS DESPUES DE BOOTSTRAP PARA PODER SOBREESCRIBIR ESTILOS. -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Qatar 2022 - Inicio</title>
+</head>
+
+<body class="bg-body-azul">
+
+    <!--INICIO HEADER-->
+    <header class="bg-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid container-edit align-items-edit">
+                <a class="navbar-brand" href="./index.html">
+                    <img class="logo-edit" src="./assets/logo.png" alt>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center text-center-edit" id="navbarNav">
+                    <!-- Con la clase navbar-edit modifico el ancho,gap,etc de la barra de navegacion -->
+                    <ul class="navbar-nav navbar-edit text-center-edit">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-edit" aria-current="page" href="./index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-edit" href="./pages/plantel.html">PLANTEL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-edit" href="./pages/fixture.html">FIXTURE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-edit" href="./pages/goles.html">GOLES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-edit" href="./pages/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        <!--FIN HEADER-->
-
-        <!--INICIO MAIN-->
-        <!-- Le coloco el mismo background color que el header -->
-        <main class="contenido-principal bg-header">
-            <!-- Aca va a ir el contenido principal-->
-            <section class="container bg-main p-4">
-                <div>
-                    <!-- Titulo de la pagina-->
-                    <h1 class="titulo-principal ">EL CAMINO A LA TERCERA</h1>
-                </div>
-                <div class="container carrousel-edit">
-                    <!-- CARROUSEL DE IMAGENES -->
-                    <div id="carouselExampleInterval" class="carousel slide"
-                        data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active"
-                                data-bs-interval="10000">
-                                <img src="./assets/argentina_campeon_1.jpg"
-                                    class="d-block w-100 img-thumbnail"
-                                    alt="...">
-                            </div>
-                            <div class="carousel-item" data-bs-interval="10000">
-                                <img src="./assets/argentina_campeon_2.jpg"
-                                    class="d-block w-100 img-thumbnail"
-                                    alt="...">
-                            </div>
-                            <div class="carousel-item" data-bs-interval="10000">
-                                <img src="./assets/argentina_campeon_3.jpg"
-                                    class="d-block w-100 img-thumbnail"
-                                    alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button"
-                            data-bs-target="#carouselExampleInterval"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"
-                                aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button"
-                            data-bs-target="#carouselExampleInterval"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon"
-                                aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </div>
-                <div>
-                    <p class="texto-principal p-4 lg-sm">Lorem, ipsum dolor sit
-                        amet consectetur adipisicing elit. Beatae, cum.
-                        Lorem ipsum dolor sit Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Animi ex corrupti
-                        laudantium, repellendus quam dolorem? Aperiam totam
-                        consectetur vero error natus, alias, exercitationem hic
-                        modi doloremque quam officiis laborum provident
-                        dignissimos. Harum atque sint sapiente nam? Deserunt
-                        odio explicabo minima odit sequi dolore consequatur
-                        doloremque voluptates dolorum delectus, tempora officia
-                        repudiandae. Nulla dolor ea vitae eaque voluptatem,
-                        perferendis sequi inventore fugit autem nam quidem,
-                        doloremque natus facere. Accusamus provident
-                        voluptatibus ad aperiam laudantium impedit quis nesciunt
-                        rem corporis veritatis, tenetur molestiae, repudiandae
-                        voluptate nulla cumque, sunt laborum aliquid. Nostrum
-                        consectetur quasi dicta molestiae at officiis cumque
-                        aperiam dignissimos repellendus voluptatibus, laborum
-                        esse. Magnam sint animi nisi impedit unde, est aliquam
-                        optio corporis eveniet, neque ut porro sit iusto velit
-                        consectetur, reprehenderit earum veniam voluptatem ipsa
-                        alias! Doloribus doloremque non suscipit repudiandae
-                        cumque sapiente natus neque quibusdam soluta, nostrum
-                        rem sequi quaerat quos distinctio unde fugiat officia
-                        laudantium hic, tenetur modi.
-                        amet
-                        consectetur adipisicing elit. Ratione, ad minima
-                        eveniet, nihil quasi debitis eaque mollitia et eum
-                        praesentium reprehenderit voluptas, numquam id
-                        impedit
-                        quidem velit itaque obcaecati sunt. Lorem ipsum
-                        dolor
-                        sit amet consectetur, adipisicing elit. Voluptate
-                        officiis ea incidunt dicta saepe harum rem magnam
-                        distinctio consectetur, quo voluptas asperiores,
-                        voluptatum dolorum, cupiditate repudiandae est eos
-                        laudantium recusandae. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Quibusdam omnis sit
-                        labore? Nemo libero ipsam fuga est odit expedita
-                        quae
-                        cum labore minima. Ea, impedit doloremque? Rerum
-                        delectus qui tempore!</p>
-                </div>
-            </section>
-        </main>
-        <!--FIN DEL MAIN-->
-
-        <!--INICIO ASIDE-->
-        <!-- Le coloco el mismo background color que el header -->
-        <aside class="bg-header aside-edit">
-            <!-- Donde se suele agregar contenido no tan relevante a la web. Banners, publicidad, etc-->
-            <!-- Reseteo el padding original, y le agrego un padding top y bottom de 5 = 3rem -->
-            <div class="container p-0 pt-5 pb-5">
-                <!--Le incorporo una lista de spotify-->
-                <iframe style="border-radius:12px"
-                    src="https://open.spotify.com/embed/playlist/7MREPP7BD7ClNLJ6FTU7Nx?utm_source=generator"
-                    width="100%" height="352" frameBorder="0"
-                    allowfullscreen
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                    loading="lazy"></iframe>
             </div>
-        </aside>
-        <!--FIN ASIDE-->
+        </nav>
+    </header>
+    <!--FIN HEADER-->
 
-        <!--INICIO FOOTER-->
-        <footer class="bg-header">
-            <section class="container pb-5">
-                <div class="row">
-                    <div class="col-sm-4 col-xs-5 redes-edit">
-                        <!--Redes Sociales-->
-                        <ul class="menu-items">
-                            <li>
-                                <a class="menu-footer-item facebook" href="https://www.facebook.com/AFASeleccionArgentina" target="_blank">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="menu-footer-item instagram" href="https://www.instagram.com/afaseleccion/?hl=es" target="_blank">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="menu-footer-item twitter" href="https://twitter.com/afa" target="_blank">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                </a>
-                            </li>
-                            
-                        </ul>
+    <!--INICIO MAIN-->
+    <!-- Le coloco el mismo background color que el header -->
+    <main class="contenido-principal">
+        <!-- Aca va a ir el contenido principal-->
+        <section class="container bg-main p-4">
+            <div>
+                <!-- Titulo de la pagina-->
+                <h1 class="titulo-principal ">EL CAMINO A "LA TERCERA"</h1>
+            </div>
+            <div class="container carrousel-edit">
+                <!-- CARROUSEL DE IMAGENES -->
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./assets/argentina_campeon_1.jpg" class="d-block w-100 img-thumbnail" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="./assets/argentina_campeon_2.jpg" class="d-block w-100 img-thumbnail" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <img src="./assets/argentina_campeon_3.jpg" class="d-block w-100 img-thumbnail" alt="...">
+                        </div>
                     </div>
-                    <div class="col-sm-4 col-xs-12 copyright-edit">
-                        <!--Copyright-->
-                        <h2 class="texto-copyright">Copyright © 2023 Giacobini
-                            Lisandro. Todos los
-                            derechos
-                            reservados.</h2>
-                    </div>
-                    <div class="col-sm-4 col-xs-5 logo-footer-edit">
-                        <!--Logo en el pie de pagina-->
-                        <img class="logo-edit" src="./assets/logo.png" alt>
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+            </div>
+            <div class="p-5">
+                <p class="texto-principal lg-sm"> La Selección Argentina se clasificó a la Copa del Mundo de Qatar
+                    2022 de forma anticipada, en unas Eliminatorias en las que finalizó invicta, en una racha histórica
+                    que alcanzó los 35 partidos sin conocer la derrota.
+                    Los números hablabann por sí solos. De sus últimos 35 encuentros, el equipo de Lionel Scaloni ganó
+                    24 y empató 11, con 70 goles a favor y 17 en contra (21 vallas en cero).
+                    La mayoría de esos juegos del último campeón de América fueron por competiciones: 17 de
+                    Eliminatorias (11-6), 8 por Copa América (6-2), 9 amistosos (6-3) y la Finalissima, en la que goleó
+                    por 3-0 a Italia en Wembley.
+                </p>
+                <p class="texto-principal lg-sm"> La Copa Mundial de la FIFA se disputó en Qatar entre el 20
+                    de noviembre y el 18 de diciembre.
+                    La 22° edición del máximo evento deportivo hizo vibrar el planeta al ritmo de la pelota, en un
+                    torneo que fue una auténtica fiesta del fútbol y que rompió distintos récords históricos.
+                    En la primera Copa Mundial de la FIFA disputada en Oriente Medio se quebraron numerosas marcas
+                    individuales y colectivas. En muchos de esos hitos estuvo presente el capitán argentino Lionel
+                    Messi, elegido mejor jugador del torneo, único jugador en la historia en marcar en cada uno de los
+                    partidos de la fase eliminatoria (octavos, cuartos, semifinal y final).
+                </p>
+                <p class="texto-principal lg-sm">
+                    Con la guía de Messi, la Selección Argentina ganó la Copa Mundial 2022, quedandose con el título
+                    tras vencer a Francia en una final apasionante, que terminó 3 a 3 una vez disputados los 120 minutos
+                    incluído el tiempo suplementario. En la decisiva serie de penales, se impuso el equipo sudamericano
+                    por 4 a 2. Para Argentina convirtieron Messi, Leandro Paredes, Paulo Dybala, y Gonzalo Montiel. Para
+                    los europeos, Killyan Mbappé y Randal Kolo Muani.
+                </p>
+                <p class="texto-principal lg-sm">
+                    En el Estadio Icónico Lusail, de Catar, Argentina consiguió el tercer título en su historia,
+                    rompiendo así 36 años de sequía sin poder levantar el trofeo más valioso. La Copa Mundial de la FIFA
+                    Argentina 1978, con Mario Kempes como gran figura, y la Copa Mundial de la FIFA México 1986, con
+                    Diego Armando Maradona como estandarte, son los otros logros que lleva la selección albiceleste en
+                    su palmarés.
+                </p>
+            </div>
+        </section>
+    </main>
+    <!--FIN DEL MAIN-->
 
-            </section>
+    <!--INICIO ASIDE-->
+    <!-- Le coloco el mismo background color que el header -->
+    <aside class="bg-header aside-edit">
+        <!-- Donde se suele agregar contenido no tan relevante a la web. Banners, publicidad, etc-->
+        <!-- Reseteo el padding original, y le agrego un padding top y bottom de 5 = 3rem -->
+        <div class="container p-0 pt-5 pb-5">
+            <!--Le incorporo una lista de spotify-->
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/7MREPP7BD7ClNLJ6FTU7Nx?utm_source=generator" width="100%"
+                height="352" frameBorder="0" allowfullscreen
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </div>
+    </aside>
+    <!--FIN ASIDE-->
 
-        </footer>
-        <!--FIN FOOTER-->
+    <!--INICIO FOOTER-->
+    <footer>
+        <section class="container pb-5">
+            <div class="row">
+                <div class="col-sm-4 col-xs-5 redes-edit">
+                    <!--Redes Sociales-->
+                    <ul class="menu-items">
+                        <li>
+                            <a class="menu-footer-item facebook" href="https://www.facebook.com/AFASeleccionArgentina"
+                                target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu-footer-item instagram" href="https://www.instagram.com/afaseleccion/?hl=es"
+                                target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="menu-footer-item twitter" href="https://twitter.com/afa" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
 
-        <!-- AGREGO EL SCRIPT DE LOS ICONOS DE REDES SOCIALES -->
-        <script src="https://kit.fontawesome.com/a285fb0e4a.js" crossorigin="anonymous"></script>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-xs-12 copyright-edit">
+                    <!--Copyright-->
+                    <h2 class="texto-copyright">Copyright © 2023 Giacobini
+                        Lisandro. Todos los
+                        derechos
+                        reservados.</h2>
+                </div>
+                <div class="col-sm-4 col-xs-5 logo-footer-edit">
+                    <!--Logo en el pie de pagina-->
+                    <img class="logo-edit" src="./assets/logo.png" alt>
+                </div>
+            </div>
 
-        <!-- AGREGO EL SCRIPT DE BOOTSTRAP -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous">
+        </section>
+
+    </footer>
+    <!--FIN FOOTER-->
+
+    <!-- AGREGO EL SCRIPT DE LOS ICONOS DE REDES SOCIALES -->
+    <script src="https://kit.fontawesome.com/a285fb0e4a.js" crossorigin="anonymous"></script>
+
+    <!-- AGREGO EL SCRIPT DE BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
         </script>
-    </body>
+</body>
+
 </html>

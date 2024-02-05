@@ -37,7 +37,7 @@ body{
     width: 13rem;
 }
 
-.bg-header {
+.bg-header, .bg-body-azul{
     /* background-color: #92d1f2; */
     background-color: #001a41;
 }
@@ -111,6 +111,29 @@ body{
     border-radius: 0.5rem;
 }
 
+.card{
+    height: 35rem;
+}
+
+.card-title{
+    font-family: 'Oswald';
+    font-weight: bold;
+}
+
+.card-text, .list-group-item{
+    font-family: 'Oswald';
+    color: black;
+    font-size: 1.2rem;
+}
+
+.arqueros-title, .defensores-title, .mediocampistas-title, .delanteros-title{
+    font-family: 'Ubuntu';
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 2rem;
+    color: #001a41;
+}
+
 .arqueros{
     justify-content: center;
     align-items: center;
@@ -141,6 +164,38 @@ body{
     gap: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+
+/* MODIFICAMOS EL MAIN - FIXTURE */
+.table {
+    width: 20rem;
+    --bs-table-bg: #001a41;
+    --bs-table-color: aliceblue;
+    font-size: 1.5rem;
+    font-family:'Oswald';
+}
+
+.table-bordered{
+    border-width: 0.25rem;
+}
+
+.bg-tableee{
+    background-color: #001a41;
+}
+
+.main-fixture-edit{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.img-fixture{
+    width: 70%;
+    margin-top: 1.5rem;
 }
 
 
@@ -220,11 +275,17 @@ body{
         display: none;
     }
 
-    .titulo-principal{
+    .titulo-principal, .arqueros-title, .defensores-title, .mediocampistas-title, .delanteros-title{
         font-size: 3.5rem;
     }
 
-    @media only screen and (max-width: 275px) {
+    /* MAIN - PLANTEL */
+    .card{
+        height: auto;
+    }
+
+
+@media only screen and (max-width: 275px) {
 
         .container-edit{
             flex-direction: column;
@@ -242,7 +303,7 @@ body{
             display: none;
         }
     
-        .titulo-principal{
+        .titulo-principal, .arqueros-title, .defensores-title, .mediocampistas-title, .delanteros-title{
             font-size: 2.5rem;
         }
 
