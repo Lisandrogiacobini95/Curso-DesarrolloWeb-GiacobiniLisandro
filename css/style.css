@@ -28,17 +28,20 @@ img{
     width: 700px;
 }
 
-body{
-    height: 1000px;
+.header-edit{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: #001a41;
+
 }
 
 /* MODIFICAMOS EL HEADER */
-.logo-edit {
-    width: 13rem;
+.logo-header-edit {
+    width: 8rem;
 }
 
-.bg-header, .bg-body-azul{
-    /* background-color: #92d1f2; */
+.bg-body-azul{
     background-color: #001a41;
 }
 
@@ -48,7 +51,13 @@ body{
     align-items: baseline;
 }
 
+.navbar-brand{
+    padding: 0px;
+    margin: 5px 5px 10px 20px;
+}
+
 .text-center-edit {
+    margin-right: 4rem;
     align-items: center;
     text-align: center;
 }
@@ -83,8 +92,8 @@ body{
 
 
 /* MODIFICAMOS EL MAIN INDEX */
+
 .bg-main{
-    /* background-color: #c6e8f9; */
     background-color: #00b4fb;
     border-radius: 1rem;
 }
@@ -169,7 +178,7 @@ body{
 
 /* MODIFICAMOS EL MAIN - FIXTURE */
 .table {
-    width: 20rem;
+    width: 30rem;
     --bs-table-bg: #001a41;
     --bs-table-color: aliceblue;
     font-size: 1.5rem;
@@ -178,10 +187,6 @@ body{
 
 .table-bordered{
     border-width: 0.25rem;
-}
-
-.bg-tableee{
-    background-color: #001a41;
 }
 
 .main-fixture-edit{
@@ -214,10 +219,15 @@ body{
     align-content: end;
 }
 
-.logo-footer-edit{
+.logo-footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: end;
+}
+
+.logo-footer-edit{
+    width: 13rem;
+    height: auto;
 }
 
 .redes-edit{
@@ -245,7 +255,7 @@ body{
         justify-content: center;
     }
     
-    .logo-footer-edit{
+    .logo-footer{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -282,6 +292,10 @@ body{
     /* MAIN - PLANTEL */
     .card{
         height: auto;
+    }
+
+    .table{
+        width: 20rem;
     }
 
 

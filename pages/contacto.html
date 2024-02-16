@@ -17,11 +17,12 @@
     <body class="bg-body-azul">
 
         <!--INICIO HEADER-->
-        <header class="bg-header">
+        <header class="header-edit">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid container-edit align-items-edit">
                     <a class="navbar-brand" href="../index.html">
-                        <img class="logo-edit" src="../assets/logo.png" alt>
+                        <img class="logo-header-edit" src="../assets/logo.png"
+                            alt>
                     </a>
                     <button class="navbar-toggler" type="button"
                         data-bs-toggle="collapse"
@@ -65,8 +66,56 @@
 
         <!--INICIO MAIN-->
         <main class="contenido-principal">
+            <section class="container bg-main p-4">
+                <form class="row g-3">
+                    <div class="form-floating mb-3 col-md-6">
+                        <input type="text" class="form-control" id="input-nombre" placeholder>
+                        <label for="input-nombre" class="form-label"> Nombre </label>
+                    </div>
+                    <div class="form-floating mb-3 col-md-6">
+                        <input type="text" class="form-control" id="input-apellido" placeholder>
+                        <label for="input-apellido" class="form-label"> Apellido </label>
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Address
+                            2</label>
+                        <input type="text" class="form-control"
+                            id="inputAddress2"
+                            placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Check me out
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Sign
+                            in</button>
+                    </div>
+                </form>
+            </section>
             <!-- Aca va a ir el contenido principal-->
-            <form action method="get">
+
+            <!-- <form action method="get">
                 <label class="texto-principal" for>Nombre y
                     Apellido:</label><input type="text"><br>
                 <label class="texto-principal" for>Mail:</label><input
@@ -79,10 +128,10 @@
                     type="text"><br>
                 <label class="texto-principal" for>Tu consulta y/o
                     sugerencia</label><br>
-                <input type="text"><br>
-                <!--BOTON ENVIAR-->
-                <button class="texto-principal">Enviar</button>
-            </form>
+                <input type="text"><br> -->
+            <!--BOTON ENVIAR-->
+            <!-- <button class="texto-principal">Enviar</button>
+            </form> -->
         </main>
 
         <!--INICIO ASIDE-->
@@ -98,21 +147,27 @@
                         <!--Redes Sociales-->
                         <ul class="menu-items">
                             <li>
-                                <a class="menu-footer-item facebook" href="https://www.facebook.com/AFASeleccionArgentina" target="_blank">
+                                <a class="menu-footer-item facebook"
+                                    href="https://www.facebook.com/AFASeleccionArgentina"
+                                    target="_blank">
                                     <i class="fa-brands fa-facebook"></i>
                                 </a>
                             </li>
                             <li>
-                                <a class="menu-footer-item instagram" href="https://www.instagram.com/afaseleccion/?hl=es" target="_blank">
+                                <a class="menu-footer-item instagram"
+                                    href="https://www.instagram.com/afaseleccion/?hl=es"
+                                    target="_blank">
                                     <i class="fa-brands fa-instagram"></i>
                                 </a>
                             </li>
                             <li>
-                                <a class="menu-footer-item twitter" href="https://twitter.com/afa" target="_blank">
+                                <a class="menu-footer-item twitter"
+                                    href="https://twitter.com/afa"
+                                    target="_blank">
                                     <i class="fa-brands fa-x-twitter"></i>
                                 </a>
                             </li>
-                            
+
                         </ul>
                     </div>
                     <div class="col-sm-4 col-xs-12 copyright-edit">
@@ -122,9 +177,10 @@
                             derechos
                             reservados.</h2>
                     </div>
-                    <div class="col-sm-4 col-xs-5 logo-footer-edit">
+                    <div class="col-sm-4 col-xs-5 logo-footer">
                         <!--Logo en el pie de pagina-->
-                        <img class="logo-edit" src="../assets/logo.png" alt>
+                        <img class="logo-footer-edit" src="../assets/logo.png"
+                            alt>
                     </div>
                 </div>
 
@@ -134,7 +190,8 @@
         <!--FIN FOOTER-->
 
         <!-- AGREGO EL SCRIPT DE LOS ICONOS DE REDES SOCIALES -->
-        <script src="https://kit.fontawesome.com/a285fb0e4a.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a285fb0e4a.js"
+            crossorigin="anonymous"></script>
 
         <!-- AGREGO EL SCRIPT DE BOOTSTRAP -->
         <script
