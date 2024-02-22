@@ -16,116 +16,125 @@
     </head>
     <body class="bg-body-azul">
 
-        <!--INICIO HEADER-->
-        <header class="header-edit">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid container-edit align-items-edit">
-                    <a class="navbar-brand" href="../index.html">
-                        <img class="logo-header-edit" src="../assets/logo.png" alt>
-                    </a>
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div
-                        class="collapse navbar-collapse justify-content-center text-center-edit"
-                        id="navbarNav">
-                        <!-- Con la clase navbar-edit modifico el ancho,gap,etc de la barra de navegacion -->
-                        <ul class="navbar-nav navbar-edit text-center-edit">
-                            <li class="nav-item">
-                                <a class="nav-link nav-link-edit"
-                                    aria-current="page"
-                                    href="../index.html">INICIO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link-edit"
-                                    href="./plantel.html">PLANTEL</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link-edit"
-                                    href="./fixture.html">FIXTURE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link-edit"
-                                    href="./goles.html">GOLES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link nav-link-edit"
-                                    href="./contacto.html">CONTACTO</a>
-                            </li>
-                        </ul>
-                    </div>
+    <!--INICIO HEADER-->
+    <header class=" header">
+        <nav class="navbar navbar-expand-lg header-menu">
+            <div class="container-fluid container-edit">
+                <a class="navbar-brand header-menu-logo" href="../index.html">
+                    <img class="header-menu-logo-width" src="../assets/logo.png" alt>
+                </a>
+                <button class="navbar-toggler header-menu-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon header-menu-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse header-menu-nav" id="navbarNav">
+                    <!-- Con la clase header-menu-nav modifico el ancho,gap,etc de la barra de navegacion -->
+                    <ul class="navbar-nav header-menu-nav-edit">
+                        <li class="nav-item">
+                            <a class="header-menu-nav-link" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header-menu-nav-link" href="./plantel.html">PLANTEL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header-menu-nav-link" href="./fixture.html">FIXTURE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header-menu-nav-link" href="./goles.html">GOLES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header-menu-nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        <!--FIN HEADER-->
+            </div>
+        </nav>
+    </header>
+    <!--FIN HEADER-->
 
         <!--INICIO MAIN-->
         <main class="contenido-principal">
             <!-- Aca va a ir el contenido principal-->
-            <section>
-                <div>
-                    <iframe class="video-goles" width="560" height="315" src="https://www.youtube.com/embed/3-NaqueXrH4?si=SFn2UnZQ6SM5_HeW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <section class="container main">
+                <div class="p-5">
+                    <p class="titulo-principal lg-sm">Todos los goles de
+                        Argentina en Qatar</p>
+                    <p class="texto-principal lg-sm">En el siguiente video,
+                        podras ver el inolvidable paso de la seleccion Argentina
+                        en el mundial de Qatar 2022, repasando todos los goles y
+                        definiciones que llevaron a la seleccion a levantar
+                        la copa del mundo por tercera vez en su historia.
+                    </p>
+                    <p class="texto-principal lg-sm">Estos fueron los 15 tantos
+                        que llevaron a la Scaloneta a la gloria máxima. Lionel 
+                        Messi (7), Julián Álvarez (4), Enzo Fernández (1),
+                        Alexis Mac Allister (1), Ángel Di María (1) y Nahuel
+                        Molina (1) fueron los autores de los tantos
+                        argentinos.</p>
                 </div>
-                <div>
-                    <p class="texto-principal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ipsum rerum expedita distinctio facere cupiditate sapiente corporis impedit voluptate error? Sed, nihil reprehenderit? Vitae iure provident pariatur reiciendis totam alias?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab suscipit repellat nihil expedita vero qui saepe rerum laborum aperiam optio. Ipsa officiis quasi saepe architecto sunt placeat corporis beatae Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius accusantium aliquam possimus laboriosam magni odit, commodi labore maiores vel veritatis neque accusamus nisi minima sit a necessitatibus, aspernatur id non.</iure></p>
+                <div class="container video-goles">
+                    <iframe class="video-goles-edit" width="100%" height="100%"
+                        src="https://www.youtube.com/embed/3-NaqueXrH4?si=SFn2UnZQ6SM5_HeW"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                 </div>
             </section>
         </main>
 
         <!--INICIO ASIDE-->
-        <aside class="contenido-aside">   
+        <aside class="contenido-aside">
             <!-- Donde se suele agregar contenido no tan relevante a la web. Banners, publicidad, etc-->
         </aside>
 
-        <!--INICIO FOOTER-->
-        <footer>
-            <section class="container pb-5">
-                <div class="row">
-                    <div class="col-sm-4 col-xs-5 redes-edit">
-                        <!--Redes Sociales-->
-                        <ul class="menu-items">
-                            <li>
-                                <a class="menu-footer-item facebook" href="https://www.facebook.com/AFASeleccionArgentina" target="_blank">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="menu-footer-item instagram" href="https://www.instagram.com/afaseleccion/?hl=es" target="_blank">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="menu-footer-item twitter" href="https://twitter.com/afa" target="_blank">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                </a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    <div class="col-sm-4 col-xs-12 copyright-edit">
-                        <!--Copyright-->
-                        <h2 class="texto-copyright">Copyright © 2023 Giacobini
-                            Lisandro. Todos los
-                            derechos
-                            reservados.</h2>
-                    </div>
-                    <div class="col-sm-4 col-xs-5 logo-footer">
-                        <!--Logo en el pie de pagina-->
-                        <img class="logo-footer-edit" src="../assets/logo.png" alt>
-                    </div>
+    <!--INICIO FOOTER-->
+    <footer>
+        <section class="container pb-5">
+            <div class="row footer">
+                <div class="col-sm-4 col-xs-5 footer-redes">
+                    <!--Redes Sociales-->
+                    <ul class="footer-redes-menu">
+                        <li>
+                            <a class="footer-redes-menu-item facebook" href="https://www.facebook.com/AFASeleccionArgentina"
+                                target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-redes-menu-item instagram" href="https://www.instagram.com/afaseleccion/?hl=es"
+                                target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-redes-menu-item twitter" href="https://twitter.com/afa" target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                        </li>
+
+                    </ul>
                 </div>
+                <div class="col-sm-4 col-xs-12 footer-copyright">
+                    <!--Copyright-->
+                    <h2 class="footer-copyright-text">Copyright © 2023 Giacobini
+                        Lisandro. Todos los
+                        derechos
+                        reservados.</h2>
+                </div>
+                <div class="col-sm-4 col-xs-5 footer-logo">
+                    <!--Logo en el pie de pagina-->
+                    <img class="footer-logo-edit" src="../assets/logo.png" alt>
+                </div>
+            </div>
 
-            </section>
+        </section>
 
-        </footer>
-        <!--FIN FOOTER-->
+    </footer>
+    <!--FIN FOOTER-->
 
         <!-- AGREGO EL SCRIPT DE LOS ICONOS DE REDES SOCIALES -->
-        <script src="https://kit.fontawesome.com/a285fb0e4a.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a285fb0e4a.js"
+            crossorigin="anonymous"></script>
 
         <!-- AGREGO EL SCRIPT DE BOOTSTRAP -->
         <script

@@ -1,0 +1,13 @@
+//MIXIN PARA DECLARAR FLEX
+@mixin flex($flex-direction,$justify-content, $align-items){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin font($font-type,$font-size,$font-color){
+    font-family: $font-type;
+    font-size: $font-size;
+    color: $font-color;
+}

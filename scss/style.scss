@@ -1,0 +1,16 @@
+@import "./base/fonts";
+@import "./utilities/variables"; 
+@import "./base/reset";
+@import "./utilities/mixins";
+
+
+// IMPORTO LOS VIEWS
+@import "./views/header";
+@import "./views/index";
+@import "./views/plantel";
+@import "./views/fixture";
+@import "./views/goles";
+@import "./views/contacto";
+@import "./views/footer";
+
+

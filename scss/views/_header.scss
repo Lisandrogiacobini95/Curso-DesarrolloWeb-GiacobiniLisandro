@@ -1,0 +1,78 @@
+/* MODIFICAMOS EL HEADER */
+
+/* Ponemos el header en STICKY para que quede fijo al hacer scroll, Top:0px indica desde donde comienza. */
+.header {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: $background-azul;
+
+    &-menu {
+
+
+        &-logo {
+            padding: 0px;
+            margin: 5px 5px 10px 20px;
+
+            &-width {
+                width: $logo-header;
+            }
+
+        }
+
+        &-toggler {
+            margin-right: 4.5rem;
+            background-color: $color-menu;
+        }
+
+        &-toggler-icon {
+            width: 3em;
+            height: 3em;
+            background-color: $color-menu;
+        }
+
+        &-nav {
+            @include flex(null,center,center);
+
+            &-edit {
+                gap: 4rem;
+                align-items: center;
+            }
+
+            &-link {
+                @include font('Ubuntu',$fontsize-menu,$text-claro);
+            }
+
+            &-link:hover {
+                text-decoration: underline;
+                color: $text-header-hover;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .header-menu-nav-link {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 275px) {
+    .container-edit{
+        flex-direction: column;
+    }
+
+    .header-menu-logo {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .header-menu-toggler {
+        margin: 2rem 0;
+    }
+
+    .header-menu-nav-link {
+        font-size: 1.5rem;
+    }
+}

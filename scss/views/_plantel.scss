@@ -1,0 +1,40 @@
+/*MODIFICAMOS EL MAIN - PLANTEL*/
+.plantel{
+    @extend .index;
+
+    &-arqueros{
+        @include flex(null,center,center);
+        gap: 2rem;
+        padding: 2rem 0rem;
+
+        &-title{
+            @include font('Ubuntu',$fontsize-titulo,$text-oscuro);
+            text-align: center;
+            padding-top: 2rem;
+        }
+    }
+
+    &-defensores{
+        @extend .plantel-arqueros;
+
+        &-title{
+            @extend .plantel-arqueros-title;
+        }
+    }
+
+    &-mediocampistas{
+        @extend .plantel-arqueros;
+
+        &-title{
+            @extend .plantel-arqueros-title;
+        }
+    }
+
+    &-delanteros{
+        @extend .plantel-arqueros;
+
+        &-title{
+            @extend .plantel-arqueros-title;
+        }
+    }
+}

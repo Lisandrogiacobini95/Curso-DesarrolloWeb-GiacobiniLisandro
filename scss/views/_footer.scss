@@ -1,0 +1,56 @@
+/*MODIFICAMOS EL FOOTER*/
+
+.footer {
+
+    &-redes {
+        @include flex(column, center, start);
+
+        &-menu {
+            &-item {
+                @include font('Ubuntu', $fontsize-menu, $text-claro);
+            }
+        }
+    }
+
+    &-copyright {
+        @include flex(null, center, end);
+
+        &-text {
+            @include font('Ubuntu', $fontsize-copyright, $text-claro);
+            text-align: center;
+        }
+    }
+
+
+    &-logo {
+        @include flex(null, end, center);
+
+        &-edit {
+            width: $logo-footer;
+            height: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .footer-logo {
+        @include flex(null, center, null);
+    }
+
+    .footer-redes {
+        @include flex(row, center, center);
+    }
+
+    .footer-redes-menu {
+        @include flex(null, center, center);
+        gap: 2rem;
+        padding: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 275px) {
+    .menu-items {
+        padding-top: 1rem;
+    }
+}
