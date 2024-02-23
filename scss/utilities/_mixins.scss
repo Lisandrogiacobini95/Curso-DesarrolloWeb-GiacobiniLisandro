@@ -6,8 +6,9 @@
     align-items: $align-items;
 }
 
-@mixin font($font-type,$font-size,$font-color){
+@mixin font($font-type,$font-size,$font-color, $text-align){
     font-family: $font-type;
     font-size: $font-size;
     color: $font-color;
+    text-align: $text-align;
 }

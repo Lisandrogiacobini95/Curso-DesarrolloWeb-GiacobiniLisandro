@@ -1,0 +1,72 @@
+/*MODIFICAMOS EL MAIN - FIXTURE*/
+
+.fixture{
+    @extend .index;
+    text-align: center;
+
+    &-img{
+        width: 70%;
+        margin-top: 2rem;
+    }
+
+    &-titulo{
+        @extend .index-titulo;
+    }
+
+    &-text{
+        @include font('Oswald',$fontsize-parrafo,$textcolor-oscuro, justify);
+    }
+
+    &-edit{
+        @include flex(column, center,center);
+        flex-wrap: wrap;
+        padding-top: 2rem;
+
+    }
+}
+
+.table{
+    width: 30rem;
+    --bs-table-bg: #001a41;
+    --bs-table-color: aliceblue;
+    @include font('Oswald', $fontsize-fixture, null, center);
+
+    &-bordered{
+        border-width:0.25rem;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .table{
+        width: 20rem;
+    }
+
+    .fixture-img{
+        width: 90%;
+    }
+
+    .fixture-titulo{
+        font-size: $fontsize-titulo-sm;
+    }
+}
+
+@media only screen and (max-width: 275px){
+    .table{
+        width: 15rem;
+    }
+
+    .fixture-titulo{
+        font-size: $fontsize-titulo-xs;
+    }
+
+    .fixture-text{
+        font-size: $fontsize-parrafo-xs;
+    }
+
+    .fixture-img{
+        display: none;
+    }
+
+}
+
+

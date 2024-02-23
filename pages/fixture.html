@@ -10,6 +10,9 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous">
 
+        <!-- AGREGO EL CDN A LAS ANIMACIONES AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
         <!-- AGREGO EL LINK A MI ARCHIVO CSS DESPUES DE BOOTSTRAP PARA PODER SOBREESCRIBIR ESTILOS. -->
         <link rel="stylesheet" href="../css/style.css">
         <title>Qatar 2022 - Inicio</title>
@@ -17,58 +20,73 @@
     </head>
     <body class="bg-body-azul">
 
-    <!--INICIO HEADER-->
-    <header class=" header">
-        <nav class="navbar navbar-expand-lg header-menu">
-            <div class="container-fluid container-edit">
-                <a class="navbar-brand header-menu-logo" href="../index.html">
-                    <img class="header-menu-logo-width" src="../assets/logo.png" alt>
-                </a>
-                <button class="navbar-toggler header-menu-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon header-menu-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse header-menu-nav" id="navbarNav">
-                    <!-- Con la clase header-menu-nav modifico el ancho,gap,etc de la barra de navegacion -->
-                    <ul class="navbar-nav header-menu-nav-edit">
-                        <li class="nav-item">
-                            <a class="header-menu-nav-link" aria-current="page" href="../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="header-menu-nav-link" href="./plantel.html">PLANTEL</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="header-menu-nav-link" href="./fixture.html">FIXTURE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="header-menu-nav-link" href="./goles.html">GOLES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="header-menu-nav-link" href="./contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
+        <!--INICIO HEADER-->
+        <header class=" header">
+            <nav class="navbar navbar-expand-lg header-menu">
+                <div class="container-fluid container-edit">
+                    <a class="navbar-brand header-menu-logo"
+                        href="../index.html">
+                        <img class="header-menu-logo-width"
+                            src="../assets/logo.png" alt>
+                    </a>
+                    <button class="navbar-toggler header-menu-toggler"
+                        type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span
+                            class="navbar-toggler-icon header-menu-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse header-menu-nav"
+                        id="navbarNav">
+                        <!-- Con la clase header-menu-nav modifico el ancho,gap,etc de la barra de navegacion -->
+                        <ul class="navbar-nav header-menu-nav-edit">
+                            <li class="nav-item">
+                                <a class="header-menu-nav-link"
+                                    aria-current="page"
+                                    href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="header-menu-nav-link"
+                                    href="./plantel.html">PLANTEL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="header-menu-nav-link"
+                                    href="./fixture.html">FIXTURE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="header-menu-nav-link"
+                                    href="./goles.html">GOLES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="header-menu-nav-link"
+                                    href="./contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <!--FIN HEADER-->
+            </nav>
+        </header>
+        <!--FIN HEADER-->
 
         <!--INICIO MAIN-->
-        <main class="container contenido-principal bg-main">
+        <main class="container">
             <!-- Aca va a ir el contenido principal-->
-            <section class>
-                <div class="text-center p-5">
-                    <img class="container img-fixture"
+            <section class="fixture">
+                <div class="p-5">
+                    <img class="container fixture-img"
                         src="../assets/Fixture.jpg" alt>
-                    <p class="texto-principal lg-sm mt-5">La Albiceleste fue de menor
+                    <p class="fixture-text lg-sm mt-5">La Albiceleste fue de
+                        menor
                         a mayor en el torneo, comenzo con una derrota ante
                         Arabia Saudí y fue creciendo hasta golear a Croacia en
                         semifinales. Repasamos su trayecto hasta el partido
                         decisivo en Lusail.</p>
                 </div>
                 <article class="primer-partido">
-                    <div class="main-fixture-edit">
-                        <table class="table table-bordered border-primary">
+                    <div class="fixture-edit">
+                        <table class="table table-bordered border-primary"
+                            data-aos="flip-right">
                             <thead class="text-center">
                                 <tr>
                                     <th colspan="2" scope="col">Primer
@@ -87,7 +105,7 @@
                             </tbody>
                         </table>
                         <div class="p-5">
-                            <p class="texto-principal">Un equipo que venía de
+                            <p class="fixture-text">Un equipo que venía de
                                 ganar
                                 en el mítico Maracaná la final de la Copa
                                 América
@@ -102,7 +120,7 @@
                                 en el
                                 debut...
                             </p>
-                            <p class="texto-principal">Tras 36 duelos y en la
+                            <p class="fixture-text">Tras 36 duelos y en la
                                 presentación mundialista, la
                                 Selección Argentina cayó 2-1 ante Arabia
                                 Saudita, en
@@ -113,7 +131,7 @@
                                 árabes dieron vuelta el partido en una ráfaga y
                                 Argentina perdió el invicto.
                             </p>
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 "Sabemos que es un golpe muy duro, una derrota que duele, pero que la gente confíe porque este grupo no los va a dejar tirados",
                                 fue el primer mensaje al país de Lionel Andrés
                                 Messi.
@@ -122,8 +140,8 @@
                     </div>
                 </article>
                 <article class="segundo-partido">
-                    <div class="main-fixture-edit">
-                        <table class="table table-bordered border-primary">
+                    <div class="fixture-edit">
+                        <table class="table table-bordered border-primary" data-aos="flip-right">
                             <thead class="text-center">
                                 <tr>
                                     <th colspan="2" scope="col">Segundo
@@ -142,21 +160,21 @@
                             </tbody>
                         </table>
                         <div class="p-5">
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 Cuatro días después del debut, Argentina salió a
                                 jugar la primera de sus seis finales en Qatar.
                                 No había margen de error en el horizonte si su
                                 deseo era mantener vivo el sueño de levantar la
                                 Copa del Mundo el 18 de diciembre.
                             </p>
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 Por eso, a Scaloni no le tembló el pulso e hizo
                                 cinco variantes: cambió tres de los cuatro
                                 defensores, sacó a su volante central predilecto
                                 (Paredes) y probó a Mac Allister por el Papu
                                 Gómez.
                             </p>
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 Aunque su once definitivo lo encontró tras un
                                 primer tiempo engorroso en el que la Selección
                                 no logró destrabar el nudo mexicano. Entonces,
@@ -169,8 +187,8 @@
                     </div>
                 </article>
                 <article class="tercer-partido">
-                    <div class="main-fixture-edit">
-                        <table class="table table-bordered border-primary">
+                    <div class="fixture-edit">
+                        <table class="table table-bordered border-primary" data-aos="flip-right">
                             <thead class="text-center">
                                 <tr>
                                     <th colspan="2" scope="col">Tercer
@@ -189,7 +207,7 @@
                             </tbody>
                         </table>
                         <div class="p-5">
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 Como un ave fénix, la Selección dio una muestra
                                 de carácter para renacer como candidata en el
                                 último partido de la fase de grupos. En el
@@ -198,7 +216,7 @@
                                 Polonia representó el renacimiento de la
                                 Scaloneta en Qatar.
                             </p>
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 El 2-0 sobre Polonia, un rival al que borró de
                                 la cancha y al que solo en el primer tiempo le
                                 generó 14 llegadas al arco, fue una producción
@@ -213,8 +231,8 @@
                     </div>
                 </article>
                 <article class="cuarto-partido">
-                    <div class="main-fixture-edit">
-                        <table class="table table-bordered border-primary">
+                    <div class="fixture-edit">
+                        <table class="table table-bordered border-primary" data-aos="flip-right">
                             <thead class="text-center">
                                 <tr>
                                     <th colspan="2" scope="col">Cuarto
@@ -233,7 +251,7 @@
                             </tbody>
                         </table>
                         <div class="p-5">
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 El máximo enemigo parecía ser el cansancio y el
                                 pasado, porque cuatro años atrás la Selección se
                                 había ido en esa instancia de Rusia contra
@@ -245,14 +263,14 @@
                                 siempre- lo hizo el diez con una noche imperial
                                 en el estadio Al Rayyan.
                             </p>
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 Aunque la Selección había estado 35 minutos sin
                                 poder incomodar a Australia, Messi fue el dueño
                                 de una de sus mejores actuaciones en Qatar y
                                 anotó por primera vez en fase eliminatoria en su
                                 partido 23 en mundiales.
                             </p>
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 En el segundo tiempo, Álvarez amplió una ventaja
                                 que no fue tranquilizadora porque el rival
                                 descontó por un rebote desafortunado en Enzo
@@ -263,8 +281,8 @@
                     </div>
                 </article>
                 <article class="quinto-partido">
-                    <div class="main-fixture-edit">
-                        <table class="table table-bordered border-primary">
+                    <div class="fixture-edit">
+                        <table class="table table-bordered border-primary" data-aos="flip-right">
                             <thead class="text-center">
                                 <tr>
                                     <th colspan="2" scope="col">Quinto
@@ -283,7 +301,7 @@
                             </tbody>
                         </table>
                         <div class="p-5">
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 El largo descanso llevó aparejado un rumor que
                                 golpeó fuerte puertas adentro: la supuesta
                                 lesión de Rodrigo De Paul, cuya participación se
@@ -294,7 +312,7 @@
                                 (sic)”, se irritó Scaloni en la conferencia de
                                 prensa previa.
                             </p>
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 Con 65 minutos de De Paul y sin Di María,
                                 finalmente, Argentina se metió en semifinales
                                 gracias a un enorme Dibu Martínez en los penales
@@ -303,7 +321,7 @@
                                 agregado que dio el árbitro español Antonio
                                 Mateu Lahoz fueron un castigo demasiado grande.
                             </p>
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 Es que Argentina ganaba 2-0, otra vez de la mano
                                 de un Messi magistral, que armó una jugada
                                 genial para habilitar a Nahuel Molina (autor de
@@ -318,8 +336,8 @@
                     </div>
                 </article>
                 <article class="sexto-partido">
-                    <div class="main-fixture-edit">
-                        <table class="table table-bordered border-primary">
+                    <div class="fixture-edit">
+                        <table class="table table-bordered border-primary" data-aos="flip-right">
                             <thead class="text-center">
                                 <tr>
                                     <th colspan="2" scope="col">Sexto
@@ -338,7 +356,7 @@
                             </tbody>
                         </table>
                         <div class="p-5">
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 El sexto paso no era uno
                                 más, menos después de que la prensa mundial les
                                 dijera a los jugadores argentinos que no sabían
@@ -346,7 +364,7 @@
                                 poco de orgullo tenemos que tener”, replicaba
                                 Scaloni en la previa del duelo con Croacia.
                             </p>
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 Con un Messi otra vez mágico y un Julián Álvarez
                                 letal, Argentina resolvió un partido que pintaba
                                 para largo, con dos manos de nocaut en el primer
@@ -355,7 +373,7 @@
                                 que en la primera media hora había mostrado sus
                                 credenciales de finalista del Mundial anterior.
                             </p>
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 Además de darle a Argentina el pase a la final,
                                 el partido sirvió para confirmar que el de Qatar
                                 es el Mundial de Messi. Su mejor Mundial, el
@@ -368,9 +386,9 @@
                         </div>
                     </div>
                 </article>
-                <article class="sexto-partido">
-                    <div class="main-fixture-edit">
-                        <table class="table table-bordered border-primary">
+                <article class="septimo-partido">
+                    <div class="fixture-edit">
+                        <table class="table table-bordered border-primary" data-aos="flip-right">
                             <thead class="text-center">
                                 <tr>
                                     <th colspan="2" scope="col">Septimo
@@ -389,7 +407,7 @@
                             </tbody>
                         </table>
                         <div class="p-5">
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 El momento de la verdad le había llegado a la
                                 Scaloneta, ese equipo que empezó criticado
                                 porque algunos creían que su entrenador no tenía
@@ -398,14 +416,14 @@
                                 América concretó la chance que construyó para
                                 ser campeón del Mundo.
                             </p>
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 Después de un primer tiempo en el que borró a
                                 Francia de la cancha y se fue 2 a 0 en el
                                 entretiempo por los goles de Lionel Messi -de
                                 penal- y Ángel Di María, el hombre de los goles
                                 en las finales.
                             </p>
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 Sin embargo, Argentina iba a sufrir para
                                 festejar. A diez minutos del final, un doblete
                                 de Kylian Mbappé (uno de penal) llevó el partido
@@ -415,21 +433,22 @@
                                 la definición por penales como contra Países
                                 Bajos.
                             </p>
-                            <p class="texto-principal">
+                            <p class="fixture-text">
                                 Dibu Martínez, nuevamente, achicó el arco para
                                 que Francia fallara dos penales y los goles de
                                 Messi, Dybala, Paredes y Montiel le permitieron
                                 a la Argentina volver a ser campeón después de
                                 38 años.
                             </p>
-                            <h2 class="titulo-principal mt-5">
+                            <h2 class="fixture-titulo mt-5">
                                 "Disfruto de la Selección y quiero unos partidos más siendo campeón del mundo",
                                 anunció el mejor jugador del mundo, el que
                                 cumplió con la promesa del 22 de noviembre y les
                                 regaló la copa a todos los argentinos.
                             </h2>
                             <div class="text-center">
-                                <img class="container img-fixture" src="../assets/messi-festejando.jpg" alt>
+                                <img class="container fixture-img"
+                                    src="../assets/messi-festejando.jpg" alt>
                             </div>
 
                         </div>
@@ -443,50 +462,62 @@
             <!-- Donde se suele agregar contenido no tan relevante a la web. Banners, publicidad, etc-->
         </aside>
 
-    <!--INICIO FOOTER-->
-    <footer>
-        <section class="container pb-5">
-            <div class="row footer">
-                <div class="col-sm-4 col-xs-5 footer-redes">
-                    <!--Redes Sociales-->
-                    <ul class="footer-redes-menu">
-                        <li>
-                            <a class="footer-redes-menu-item facebook" href="https://www.facebook.com/AFASeleccionArgentina"
-                                target="_blank">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="footer-redes-menu-item instagram" href="https://www.instagram.com/afaseleccion/?hl=es"
-                                target="_blank">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="footer-redes-menu-item twitter" href="https://twitter.com/afa" target="_blank">
-                                <i class="fa-brands fa-x-twitter"></i>
-                            </a>
-                        </li>
+        <!--INICIO FOOTER-->
+        <footer>
+            <section class="container pb-5">
+                <div class="row footer">
+                    <div class="col-sm-4 col-xs-5 footer-redes">
+                        <!--Redes Sociales-->
+                        <ul class="footer-redes-menu">
+                            <li>
+                                <a class="footer-redes-menu-item facebook"
+                                    href="https://www.facebook.com/AFASeleccionArgentina"
+                                    target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer-redes-menu-item instagram"
+                                    href="https://www.instagram.com/afaseleccion/?hl=es"
+                                    target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="footer-redes-menu-item twitter"
+                                    href="https://twitter.com/afa"
+                                    target="_blank">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
 
-                    </ul>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 footer-copyright">
+                        <!--Copyright-->
+                        <h2 class="footer-copyright-text">Copyright © 2023
+                            Giacobini
+                            Lisandro. Todos los
+                            derechos
+                            reservados.</h2>
+                    </div>
+                    <div class="col-sm-4 col-xs-5 footer-logo">
+                        <!--Logo en el pie de pagina-->
+                        <img class="footer-logo-edit" src="../assets/logo.png"
+                            alt>
+                    </div>
                 </div>
-                <div class="col-sm-4 col-xs-12 footer-copyright">
-                    <!--Copyright-->
-                    <h2 class="footer-copyright-text">Copyright © 2023 Giacobini
-                        Lisandro. Todos los
-                        derechos
-                        reservados.</h2>
-                </div>
-                <div class="col-sm-4 col-xs-5 footer-logo">
-                    <!--Logo en el pie de pagina-->
-                    <img class="footer-logo-edit" src="../assets/logo.png" alt>
-                </div>
-            </div>
 
-        </section>
+            </section>
 
-    </footer>
-    <!--FIN FOOTER-->
+        </footer>
+        <!--FIN FOOTER-->
+
+        <!-- AGREGO EL SCRIPT DE LAS ANIMACIONES AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
         <!-- AGREGO EL SCRIPT DE LOS ICONOS DE REDES SOCIALES -->
         <script src="https://kit.fontawesome.com/a285fb0e4a.js"

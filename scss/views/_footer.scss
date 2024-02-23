@@ -7,7 +7,7 @@
 
         &-menu {
             &-item {
-                @include font('Ubuntu', $fontsize-menu, $text-claro);
+                @include font('Ubuntu', $fontsize-menu, $textcolor-claro,center);
             }
         }
     }
@@ -16,8 +16,7 @@
         @include flex(null, center, end);
 
         &-text {
-            @include font('Ubuntu', $fontsize-copyright, $text-claro);
-            text-align: center;
+            @include font('Ubuntu', $fontsize-copyright, $textcolor-claro,center);
         }
     }
 

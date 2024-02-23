@@ -40,12 +40,12 @@
             }
 
             &-link {
-                @include font('Ubuntu',$fontsize-menu,$text-claro);
+                @include font('Ubuntu',$fontsize-menu,$textcolor-claro, null);
             }
 
             &-link:hover {
                 text-decoration: underline;
-                color: $text-header-hover;
+                color: $textcolor-header-hover;
             }
         }
     }

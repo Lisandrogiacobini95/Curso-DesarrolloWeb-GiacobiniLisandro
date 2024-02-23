@@ -1,0 +1,34 @@
+/*MODIFICAMOS EL MAIN - GOLES*/
+
+.goles{
+    @extend .index;
+
+    &-titulo{
+        @include font('Oswald', $fontsize-titulo, $textcolor-oscuro, center);
+    }
+
+    &-text{
+        @include font('Oswald',$fontsize-parrafo,$textcolor-oscuro,justify);
+    }
+
+    &-video{
+        height: 60vh;
+        padding: 20px 10px;
+    }
+}
+
+@media only screen and (max-width: 575px){
+    .goles-titulo{
+        font-size: $fontsize-titulo-sm;
+    }
+}
+
+@media only screen and (max-width: 275px){
+    .goles-titulo{
+        font-size: $fontsize-titulo-xs;
+    }
+
+    .goles-text{
+        font-size: $fontsize-parrafo-xs;
+    }
+}

@@ -1,40 +1,90 @@
 /*MODIFICAMOS EL MAIN - PLANTEL*/
-.plantel{
+.plantel {
     @extend .index;
 
-    &-arqueros{
-        @include flex(null,center,center);
+    &-arqueros {
+        @include flex(null, center, center);
         gap: 2rem;
         padding: 2rem 0rem;
 
-        &-title{
-            @include font('Ubuntu',$fontsize-titulo,$text-oscuro);
-            text-align: center;
+        &-title {
+            @include font('Ubuntu', $fontsize-titulo, $textcolor-oscuro,center);
             padding-top: 2rem;
         }
     }
 
-    &-defensores{
+    &-defensores {
         @extend .plantel-arqueros;
 
-        &-title{
+        &-title {
             @extend .plantel-arqueros-title;
         }
     }
 
-    &-mediocampistas{
+    &-mediocampistas {
         @extend .plantel-arqueros;
 
-        &-title{
+        &-title {
             @extend .plantel-arqueros-title;
         }
     }
 
-    &-delanteros{
+    &-delanteros {
         @extend .plantel-arqueros;
 
-        &-title{
+        &-title {
             @extend .plantel-arqueros-title;
         }
+    }
+}
+
+
+
+.card {
+    /*transition: transition-property, transition-duration, transition-delay, transion-timing-function;*/
+    transition: all 1s;
+    height: 35rem;
+
+    &-title {
+        font-family: 'Oswald';
+        font-weight: bold;
+        text-align: center
+    }
+
+    &-text{
+        @include font('Oswald', $fontsize-textcard, black, null);
+    }
+
+    &-img-top{
+        margin-top: 0.75rem;
+        border-radius:0.5rem;
+    }
+}
+
+
+.card:hover{
+    z-index: 5;
+    
+    transform: scale(1.2) translateY(-40px);
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.list-group-item{
+    @extend .card-text;
+}
+
+@media only screen and (max-width: 575px){
+    .card{
+        height: auto;
+    }
+
+    .plantel-arqueros-title, .plantel-defensores-title, .plantel-mediocampistas-title, .plantel-delanteros-title{
+        font-size: $fontsize-titulo-sm;
+    }
+}
+
+@media only screen and (max-width: 275px){
+    .plantel-arqueros-title, .plantel-defensores-title, .plantel-mediocampistas-title, .plantel-delanteros-title{
+        font-size: $fontsize-titulo-xs;
     }
 }

@@ -1,0 +1,48 @@
+/*MODIFICAMOS EL MAIN - CONTACTO*/
+
+.contacto{
+    @extend .index;
+    text-align: center;
+    &-titulo{
+        @include font('Oswald',$fontsize-titulo-sm,$textcolor-oscuro,center)
+    }
+
+    &-tyc p{
+        @include font('Ubuntu',$fontsize-parrafo,$textcolor-oscuro,justify);
+    }
+
+    &-tyc h3{
+        @include font('Oswald',$fontsize-titulo-xs,$textcolor-oscuro,center);
+    }
+
+}
+
+.form{
+    &-floating{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: $fontsize-contacto;
+    }
+    &-select{
+        @extend .form-floating;
+    }
+
+    &-check{
+        @include font('Oswald', $fontsize-parrafo, $textcolor-oscuro, start);
+        &-tyc{
+            color:white;
+        }
+    }
+}
+
+.form-floating>.form-control, .form-floating>.form-select, .form-floating>.form-control:not(:placeholder-shown){
+    @include font('Oswald', $fontsize-parrafo,$textcolor-oscuro, start);
+    height: 6rem;
+    min-height: calc(3.5rem + calc(var(--bs-border-width) * 2));
+    line-height: 1.25;
+    padding-top: 2.5rem
+}
+
+.btn{
+    padding: 1rem 5rem;
+    @include font('Oswald', $fontsize-contacto, $textcolor-claro, center);
+}
