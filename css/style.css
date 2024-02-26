@@ -126,7 +126,7 @@ body {
 }
 
 @media only screen and (max-width: 575px) {
-  .main-titulo {
+  .index-titulo, .fixture-titulo {
     font-size: 3.5rem;
   }
   .index-carrousel {
@@ -137,8 +137,8 @@ body {
   .aside-edit {
     display: none;
   }
-  .main-titulo {
-    font-size: 2.5rem;
+  .index-titulo, .fixture-titulo {
+    font-size: 2rem;
   }
 }
 /*MODIFICAMOS EL MAIN - PLANTEL*/
@@ -198,7 +198,7 @@ body {
   .plantel-defensores-title,
   .plantel-mediocampistas-title,
   .plantel-delanteros-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 /*MODIFICAMOS EL MAIN - FIXTURE*/
@@ -214,6 +214,12 @@ body {
   font-size: 2rem;
   color: #001a41;
   text-align: justify;
+}
+.fixture-text-final {
+  font-family: "Ubuntu";
+  font-size: 5rem;
+  color: #001a41;
+  text-align: center;
 }
 .fixture-edit {
   display: flex;
@@ -246,16 +252,22 @@ body {
   .fixture-titulo {
     font-size: 3.5rem;
   }
+  .fixture-text-final {
+    font-size: 3.5rem;
+  }
 }
 @media only screen and (max-width: 275px) {
   .table {
     width: 15rem;
   }
   .fixture-titulo {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .fixture-text {
     font-size: 1.5rem;
+  }
+  .fixture-text-final {
+    font-size: 2rem;
   }
   .fixture-img {
     display: none;
@@ -286,7 +298,7 @@ body {
 }
 @media only screen and (max-width: 275px) {
   .goles-titulo {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .goles-text {
     font-size: 1.5rem;
@@ -310,7 +322,7 @@ body {
 }
 .contacto-tyc h3 {
   font-family: "Oswald";
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #001a41;
   text-align: center;
 }
@@ -351,6 +363,11 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 275px) {
+  .form-floating, .form-select {
+    font-size: 1rem;
+  }
+}
 /*MODIFICAMOS EL FOOTER*/
 .footer-redes {
   display: flex;

@@ -17,12 +17,17 @@
         @include font('Oswald', $fontsize-parrafo, $textcolor-oscuro, justify);
     }
 
+    &-text-final{
+        @include font('Ubuntu', $fontsize-titulo, $textcolor-oscuro, center);
+    }
+
     &-edit {
         @include flex(column, center, center);
         flex-wrap: wrap;
         padding-top: 2rem;
 
     }
+    
 }
 
 .table {
@@ -48,6 +53,9 @@
     .fixture-titulo {
         font-size: $fontsize-titulo-sm;
     }
+    .fixture-text-final {
+        font-size: $fontsize-titulo-sm;
+    }
 }
 
 @media only screen and (max-width: 275px) {
@@ -61,6 +69,10 @@
 
     .fixture-text {
         font-size: $fontsize-parrafo-xs;
+    }
+
+    .fixture-text-final {
+        font-size: $fontsize-titulo-xs;
     }
 
     .fixture-img {
