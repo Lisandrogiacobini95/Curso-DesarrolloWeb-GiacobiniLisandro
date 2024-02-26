@@ -1,41 +1,40 @@
-
 /*MODIFICAMOS EL MAIN - INDEX*/
 
-.index{
+.index {
     min-height: 69vh;
-    background-color:$background-celeste;
+    background-color: $background-celeste;
     border-radius: 1rem;
 
-    &-titulo{
-        @include font('Ubuntu',$fontsize-titulo,$textcolor-oscuro,center);
+    &-titulo {
+        @include font('Ubuntu', $fontsize-titulo, $textcolor-oscuro, center);
         padding: 1rem 1rem;
     }
 
-    &-text{
-        @include font('Oswald',$fontsize-parrafo,$textcolor-oscuro, justify);
+    &-text {
+        @include font('Oswald', $fontsize-parrafo, $textcolor-oscuro, justify);
     }
 
 }
 
 
-@media only screen and (max-width: 575px){
-    .main-titulo{
+@media only screen and (max-width: 575px) {
+    .main-titulo {
         font-size: $fontsize-titulo-sm;
     }
 
-    .index-carrousel{
+    .index-carrousel {
         display: none;
     }
 
 }
 
-@media only screen and (max-width: 275px){
+@media only screen and (max-width: 275px) {
 
-    .aside-edit{
+    .aside-edit {
         display: none;
     }
 
-    .main-titulo{
+    .main-titulo {
         font-size: $fontsize-titulo-xs;
     }
 

@@ -8,7 +8,7 @@
         padding: 2rem 0rem;
 
         &-title {
-            @include font('Ubuntu', $fontsize-titulo, $textcolor-oscuro,center);
+            @include font('Ubuntu', $fontsize-titulo, $textcolor-oscuro, center);
             padding-top: 2rem;
         }
     }
@@ -51,40 +51,47 @@
         text-align: center
     }
 
-    &-text{
+    &-text {
         @include font('Oswald', $fontsize-textcard, black, null);
     }
 
-    &-img-top{
+    &-img-top {
         margin-top: 0.75rem;
-        border-radius:0.5rem;
+        border-radius: 0.5rem;
     }
 }
 
 
-.card:hover{
+.card:hover {
     z-index: 5;
-    
+
     transform: scale(1.2) translateY(-40px);
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-.list-group-item{
+.list-group-item {
     @extend .card-text;
 }
 
-@media only screen and (max-width: 575px){
-    .card{
+@media only screen and (max-width: 575px) {
+    .card {
         height: auto;
     }
 
-    .plantel-arqueros-title, .plantel-defensores-title, .plantel-mediocampistas-title, .plantel-delanteros-title{
+    .plantel-arqueros-title,
+    .plantel-defensores-title,
+    .plantel-mediocampistas-title,
+    .plantel-delanteros-title {
         font-size: $fontsize-titulo-sm;
     }
 }
 
-@media only screen and (max-width: 275px){
-    .plantel-arqueros-title, .plantel-defensores-title, .plantel-mediocampistas-title, .plantel-delanteros-title{
+@media only screen and (max-width: 275px) {
+
+    .plantel-arqueros-title,
+    .plantel-defensores-title,
+    .plantel-mediocampistas-title,
+    .plantel-delanteros-title {
         font-size: $fontsize-titulo-xs;
     }
 }
