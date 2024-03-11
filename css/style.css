@@ -404,6 +404,10 @@ body {
   font-size: 3rem;
   color: aliceblue;
   text-align: center;
+  transition: all 1s;
+}
+.footer-redes-menu-item:hover {
+  transform: scale(1.5) translateY(-2px);
 }
 .footer-copyright {
   display: flex;
@@ -415,6 +419,12 @@ body {
   font-size: 1.5rem;
   color: aliceblue;
   text-align: center;
+}
+.footer .fa-brands {
+  transition: all 1s;
+}
+.footer .fa-brands:hover {
+  transform: scale(1.5) translateX(10px);
 }
 .footer-logo {
   display: flex;
@@ -441,7 +451,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     padding: 0px;
   }
 }

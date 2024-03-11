@@ -8,6 +8,11 @@
         &-menu {
             &-item {
                 @include font('Ubuntu', $fontsize-menu, $textcolor-claro, center);
+                transition: all 1s;
+
+                &:hover{
+                    transform: scale(1.5) translateY(-2px);
+                }
             }
         }
     }
@@ -17,6 +22,13 @@
 
         &-text {
             @include font('Ubuntu', $fontsize-copyright, $textcolor-claro, center);
+        }
+    }
+
+    .fa-brands{
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.5) translateX(10px);
         }
     }
 
@@ -42,7 +54,7 @@
 
     .footer-redes-menu {
         @include flex(null, center, center);
-        gap: 2rem;
+        gap: 3rem;
         padding: 0px;
     }
 
